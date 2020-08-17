@@ -90,7 +90,7 @@ Demostración de la instalación con subscripciÃ³n de RHEL 8.2 aqui:
 
 
 
-## ConfiguraciÃ³n del servicio
+## Configuración del servicio
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
