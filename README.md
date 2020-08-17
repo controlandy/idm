@@ -14,13 +14,13 @@ Workshop elaborado para el cliente ABC  <br>
 
 ## Alcance
 
-Manual de procedimientos del workshop de la soluciÃ³n Red Hat Identity Management versiÃ³n X sobre plataforma Red Hat Enterprise Linux 8.2
+Manual de procedimientos del workshop de la solución Red Hat Identity Management versión X sobre plataforma Red Hat Enterprise Linux 8.2
 
 ## Tabla de cotenidos
 
 - [Requisitos](#requisitos)
-- [Proceso de instalaciÃ³n](#proceso-de-instalaciÃ³n)
-- [ConfiguraciÃ³n del servicio](#configuraciÃ³n-del-servicio)
+- [Proceso de instalación](#proceso-de-instalación)
+- [Configuración del servicio](#configuración-del-servicio)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
@@ -33,22 +33,22 @@ Manual de procedimientos del workshop de la soluciÃ³n Red Hat Identity Managem
 
 ## Requisitos
 
-Para la ejecuciÃ³n del laboratorio de IDM se necesitan cumplir los siguientes requerimientos de sistema operativo:
+Para la ejecución del laboratorio de IDM se necesitan cumplir los siguientes requerimientos de sistema operativo:
 - Sistema operativo RHEL 8.2
-- SuscripciÃ³n activa o repositorio con el ISO de RHEL activo
-- Dominio reservado para la instalaciÃ³n del servicio
-- Dimensionamiento de hardware segÃºn la transaccionalidad del servicio, revisar [IDM]( https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/installing_identity_management/preparing-the-system-for-ipa-server-installation_installing-identity-management)
+- Suscripción activa o repositorio con el ISO de RHEL activo
+- Dominio reservado para la instalación del servicio
+- Dimensionamiento de hardware segón la transaccionalidad del servicio, revisar [IDM]( https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/installing_identity_management/preparing-the-system-for-ipa-server-installation_installing-identity-management)
 
-## Proceso de instalaciÃ³n
+## Proceso de instalación
 
-El proceso de instalaciÃ³n inicia con la habilitaciÃ³n de los repositorios de sistema operativo `rhel-8-for-x86_64-baseos-rpms` y `rhel-8-for-x86_64-appstream-rpms` con los comandos:
+El proceso de instalación inicia con la habilitación de los repositorios de sistema operativo `rhel-8-for-x86_64-baseos-rpms` y `rhel-8-for-x86_64-appstream-rpms` con los comandos:
 
 `# subscription-manager repos --enable=rhel-8-for-x86_64-baseos-rpms`
 
 `# subscription-manager repos --enable=rhel-8-for-x86_64-appstream-rpms`
 
 
-En caso de no contar con una suscripciÃ³n activa, se puede utilizar un repositorio creado a partir del ISO de RHEL 8.2 editando el archivo de configuraciÃ³n de repositorio en la ruta `/etc/yum.repos.d/rhel.repo` con el siguiente contenido:
+En caso de no contar con una suscripción activa, se puede utilizar un repositorio creado a partir del ISO de RHEL 8.2 editando el archivo de configuración de repositorio en la ruta `/etc/yum.repos.d/rhel.repo` con el siguiente contenido:
 <br>`[BaseOS]`
 <br>`name=BaseOS`
 <br>`enabled=1`
@@ -63,28 +63,29 @@ En caso de no contar con una suscripciÃ³n activa, se puede utilizar un reposit
 <br>`gpgcheck=1`
 <br>`gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release`
 
-El comando `yum repolist` nos permitira validar la disponibilidad de los repositorios ya sean por suscripciÃ³n o por ISO
+El comando `yum repolist` nos permitira validar la disponibilidad de los repositorios ya sean por suscripción o por ISO
 
 `# yum repolist`
 
-Al validar la disponibilidad de los repositorios se podra activar el mÃ³dulo de IDM con:
+Al validar la disponibilidad de los repositorios se podra activar el módulo de IDM con:
 
 `# yum module enable idm:DL1`
 
 `# yum distro-sync`
 
-Finalmente, el proceso de instalaciÃ³n se podrÃ¡ iniciar con el comando:
+Finalmente, el proceso de instalación se podrá¡ iniciar con el comando:
 
 `yum module install idm:DL1/server`
 
-Considerar que el proceso de instalaciÃ³n puede realizarse con diferentes modulos ademÃ¡s del servidor base, tambiÃ©n existen otros modulos:
+Considerar que el proceso de instalación puede realizarse con diferentes modulos además del servidor base, también existen otros modulos:
 <br>- server
 <br>- dns
 <br>- adtrust
 <br>- client
 
-DemostraciÃ³n de la instalaciÃ³n con ISO de RHEL 8.2 aqui:
-DemostraciÃ³n de la instalaciÃ³n con subscripciÃ³n de RHEL 8.2 aqui:
+Demostración de la instalación con ISO de RHEL 8.2 aqui:
+
+Demostración de la instalación con subscripciÃ³n de RHEL 8.2 aqui:
 
 
 
