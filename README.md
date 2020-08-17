@@ -49,7 +49,6 @@ El proceso de instalación inicia con la habilitación de los repositorios de si
 
 
 En caso de no contar con una suscripción activa, se puede utilizar un repositorio creado a partir del ISO de RHEL 8.2 editando el archivo de configuración de repositorio en la ruta `/etc/yum.repos.d/rhel.repo` con el siguiente contenido:
-
 <br>`[BaseOS]`
 <br>`name=BaseOS`
 <br>`enabled=1`
@@ -76,7 +75,7 @@ Al validar la disponibilidad de los repositorios se podra activar el módulo de 
 
 Finalmente, el proceso de instalación se podrá iniciar con el comando:
 
-`#yum module install idm:DL1/server`
+`# yum module install idm:DL1/server`
 
 Considerar que el proceso de instalación puede realizarse con diferentes modulos además del servidor base, también existen otros modulos:
 <br>- server
