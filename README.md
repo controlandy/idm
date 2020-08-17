@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://github.com/controlandy/idm/blob/master/README.md">
-    <img src="images/idm.png" alt="IDM logo">
+    <img src="idm.png" alt="IDM logo">
   </a>
 </p>
 <h3 align="center">Red hat Identity Management</h3>
