@@ -16,7 +16,7 @@ Workshop elaborado para el cliente ABC  <br>
 
 Manual de procedimientos del workshop de la solución Red Hat Identity Management versión X sobre plataforma Red Hat Enterprise Linux 8.2
 
-## Tabla de cotenidos
+## Tabla de contenidos
 
 - [Requisitos](#requisitos)
 - [Proceso de instalación](#proceso-de-instalación)
@@ -85,7 +85,7 @@ Considerar que el proceso de instalación puede realizarse con diferentes modulo
 
 Demostración de la instalación con ISO de RHEL 8.2 aqui:
 
-Demostración de la instalación con subscripciÃ³n de RHEL 8.2 aqui:
+Demostración de la instalación con subscripción de RHEL 8.2 aqui:
 
 
 
